@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammad | Software Engineer & Content Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Dark/Light mode toggle particles background -->
+    <div id="particles-js"></div>
+    
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <div class="container">
+        <!-- Header with navigation -->
+        <header class="header">
+            <div class="header-container">
+                <!-- Logo/Brand -->
+                <div class="logo">
+                    <span class="logo-icon">💻</span>
+                    <h1 class="logo-text">Mammad</h1>
+                </div>
+                
+                <!-- Desktop navigation -->
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                        <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                        <li><a href="#links" class="nav-link" data-i18n="nav_links">Links</a></li>
+                        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Header controls -->
+                <div class="header-controls">
+                    <!-- Language toggle -->
+                    <button class="control-btn lang-toggle" id="langToggle" aria-label="Toggle language">
+                        <span class="lang-text">EN</span>
+                        <span class="lang-icon">🌐</span>
+                    </button>
+                    
+                    <!-- Theme toggle -->
+                    <button class="control-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    
+                    <!-- Hamburger menu for mobile -->
+                    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile navigation -->
+            <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+                <ul class="mobile-nav-list">
+                    <li><a href="#home" class="mobile-nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="#skills" class="mobile-nav-link" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="#links" class="mobile-nav-link" data-i18n="nav_links">Links</a></li>
+                    <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main id="main-content">
+            <!-- Hero/Profile section -->
+            <section class="hero-section" id="home">
+                <div class="hero-container">
+                    <!-- Profile image with animated hover effect -->
+                    <div class="profile-image-container">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image">
+                                <!-- Placeholder image - Replace with actual profile image -->
+                                <div class="profile-image-placeholder">
+                                    <i class="fas fa-user-ninja"></i>
+                                </div>
+                                <div class="profile-image-glow"></div>
+                            </div>
+                            <div class="profile-level" data-i18n="profile_level">Software Engineer</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile info -->
+                    <div class="profile-info">
+                        <h1 class="profile-name" data-i18n="profile_name">Mammad</h1>
+                        <p class="profile-tagline" data-i18n="profile_tagline">Software Engineer • Network Specialist • Content Creator</p>
+                        <p class="profile-bio" data-i18n="profile_bio_short">🎮 Gamer • 🎥 Content Creator • 🎨 Designer • 🤖 AI Enthusiast</p>
+                        
+                        <!-- Stats -->
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">BSc</span>
+                                <span class="stat-label" data-i18n="stat_degree">Software Engineering</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label" data-i18n="stat_experience">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label" data-i18n="stat_projects">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About section -->
+            <section class="about-section" id="about">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="about_title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text" lang="fa" dir="rtl">
+                        <h3 data-i18n="about_subtitle_fa">🇮🇷 معرفی فارسی</h3>
+                        <p><span class="bio-emoji">👋</span> <span data-i18n="about_intro_fa">سلام! من ممد هستم</span></p>
+                        <p><span class="bio-emoji">💻🌐</span> <span data-i18n="about_degree_fa">لیسانس مهندسی نرم‌افزار دارم و به‌صورت حرفه‌ای توی حوزه‌های شبکه و دیتابیس فعالیت می‌کنم</span></p>
+                        <p><span class="bio-emoji">🤝</span> <span data-i18n="about_freelance_fa">پروژه‌های فریلنسری هم می‌پذیرم و اگر همکاری جذاب باشه، خوشحال می‌شم روش وقت بذارم</span></p>
+                        
+                        <p><span class="bio-emoji">🎥</span> <span data-i18n="about_youtube_fa">اگه حوصله و فرصت داشته باشم، توی یوتیوب هم محتوا تولید می‌کنم</span></p>
+                        <p><span data-i18n="about_content_fa">از تکنولوژی، تجربه‌های واقعی، و چیزایی که به درد بخوره، نه حرفای کلیشه‌ای.</span></p>
+                        
+                        <p><span class="bio-emoji">🎮</span> <span data-i18n="about_gaming_fa">عاشق گیمم؛ مخصوصاً بازی‌های آفلاین، شوتر و داستانی</span></p>
+                        <p><span data-i18n="about_gaming_reason_fa">چون اینترنت درست‌وحسابی همیشه در دسترس نیست، بیشتر رفتم سمت آفلاین‌ها</span></p>
+                        <p><span data-i18n="about_cs2_fa">(وگرنه آنلاین‌ها هم حال‌وهوای خودشونو دارن 😄 – یه مدت هم CS2 پلی می‌دادم)</span></p>
+                        
+                        <p><span class="bio-emoji">🎬</span> <span data-i18n="about_movies_fa">فیلم و سریال هم هر وقت فرصت کنم می‌بینم</span></p>
+                        <p><span class="bio-emoji">❌😅</span> <span data-i18n="about_spoilers_fa">و یه قانون مهم دارم: اسپویل = فاجعه</span></p>
+                        
+                        <p><span class="bio-emoji">👨‍💻</span> <span data-i18n="about_programming_fa">راستش برنامه‌نویسی محض، عشقِ اولم نیست</span></p>
+                        <p><span class="bio-emoji">🎨</span> <span data-i18n="about_design_fa">بیشتر به طراحی، دیزاین و ساخت تجربه بصری علاقه دارم</span></p>
+                        <p><span data-i18n="about_adobe_fa">به نرم‌افزارهای Adobe مسلطم: Photoshop، Illustrator، Adobe XD، Premiere Pro، After Effects، Audition و …</span></p>
+                    </div>
+                    
+                    <div class="about-text" lang="en" dir="ltr" style="display: none;">
+                        <h3 data-i18n="about_subtitle_en">🇺🇸 English Bio</h3>
+                        <p><span class="bio-emoji">👋</span> <span data-i18n="about_intro_en">Hey! They call me MAMMAD 😄</span></p>
+                        <p><span class="bio-emoji">💻🌐</span> <span data-i18n="about_degree_en">I hold a Bachelor's degree in Software Engineering and I work mainly in the fields of Networking and Databases</span></p>
+                        <p><span class="bio-emoji">🤝</span> <span data-i18n="about_freelance_en">I also accept freelance projects, especially when the challenge is interesting and meaningful</span></p>
+                        
+                        <p><span class="bio-emoji">🎥</span> <span data-i18n="about_youtube_en">When time and motivation allow, I create content on YouTube</span></p>
+                        <p><span data-i18n="about_content_en">Mostly around tech, real experiences, and practical stuff — no generic talk.</span></p>
+                        
+                        <p><span class="bio-emoji">🎮</span> <span data-i18n="about_gaming_en">I'm a big fan of games, especially offline, shooter, and story-driven titles</span></p>
+                        <p><span data-i18n="about_gaming_reason_en">Due to limited internet access, offline games became my go-to choice</span></p>
+                        <p><span data-i18n="about_cs2_en">(Though online games are great too — I used to play CS2 for a while 😅)</span></p>
+                        
+                        <p><span class="bio-emoji">🎬</span> <span data-i18n="about_movies_en">I watch movies and series whenever I get the chance</span></p>
+                        <p><span class="bio-emoji">❌😄</span> <span data-i18n="about_spoilers_en">And one thing you should know about me: I absolutely hate spoilers</span></p>
+                        
+                        <p><span class="bio-emoji">👨‍💻</span> <span data-i18n="about_programming_en">Pure coding isn't exactly my passion</span></p>
+                        <p><span class="bio-emoji">🎨</span> <span data-i18n="about_design_en">I'm more into design, visuals, and creative workflows</span></p>
+                        <p><span data-i18n="about_adobe_en">I'm highly skilled with Adobe tools: Photoshop, Illustrator, Adobe XD, Premiere Pro, After Effects, Audition</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills section -->
+            <section class="skills-section" id="skills">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="skills-text" lang="fa" dir="rtl">
+                        <h3 data-i18n="skills_subtitle_fa">از نظر فنی:</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-emoji">🚀</span>
+                                <span data-i18n="skill_languages_fa">با زبان‌های خانواده C، JavaScript و Python کار کردم (پایتون رو مسلطم 🐍)</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-emoji">🌐</span>
+                                <span data-i18n="skill_web_fa">طراحی وب با HTML / CSS / JS کلاسیک و WordPress رو هم خوب می‌شناسم</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-emoji">🤖</span>
+                                <span data-i18n="skill_ai_fa">توی دنیای هوش مصنوعی هم فعالم؛ پرومت‌نویسی قوی، کار با چت‌بات‌ها و استفاده کاربردی از AI توی پروژه‌ها جزو مهارت‌هامه.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="location-info">
+                            <h3 data-i18n="location_title_fa">موقعیت جغرافیایی</h3>
+                            <div class="location-details">
+                                <p><span class="location-emoji">📍</span> <span data-i18n="location_born_fa">متولد دزفول (خوزستان)</span></p>
+                                <p><span class="location-emoji">🏙️</span> <span data-i18n="location_living_fa">ساکن تهران</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-text" lang="en" dir="ltr" style="display: none;">
+                        <h3 data-i18n="skills_subtitle_en">On the technical side:</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-emoji">🚀</span>
+                                <span data-i18n="skill_languages_en">Experience with C-family languages, JavaScript, and strong command of Python 🐍</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-emoji">🌐</span>
+                                <span data-i18n="skill_web_en">Web development using HTML / CSS / JS and solid experience with WordPress</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-emoji">🤖</span>
+                                <span data-i18n="skill_ai_en">I actively work with AI tools — including prompt engineering, chatbot workflows, and practical AI integration.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="location-info">
+                            <h3 data-i18n="location_title_en">Location</h3>
+                            <div class="location-details">
+                                <p><span class="location-emoji">📍</span> <span data-i18n="location_born_en">Born in Dezful, Khuzestan</span></p>
+                                <p><span class="location-emoji">🏙️</span> <span data-i18n="location_living_en">Currently based in Tehran</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills visualization -->
+                    <div class="skills-visualization">
+                        <div class="skill-bar">
+                            <div class="skill-name" data-i18n="skill_python">Python</div>
+                            <div class="skill-level">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="skill-percent">90%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name" data-i18n="skill_web_dev">Web Development</div>
+                            <div class="skill-level">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-percent">85%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name" data-i18n="skill_adobe">Adobe Creative Suite</div>
+                            <div class="skill-level">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                            <div class="skill-percent">88%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name" data-i18n="skill_ai_tools">AI Tools</div>
+                            <div class="skill-level">
+                                <div class="skill-fill" style="width: 82%"></div>
+                            </div>
+                            <div class="skill-percent">82%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name" data-i18n="skill_networking">Networking</div>
+                            <div class="skill-level">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                            <div class="skill-percent">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Links section -->
+            <section class="links-section" id="links">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="links_title">Connect With Me</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle" data-i18n="links_subtitle">در انتها، می‌تونی از طریق لینک‌های زیر باهام در ارتباط باشی 👇</p>
+                </div>
+                
+                <div class="links-container">
+                    <!-- Link cards -->
+                    <a href="https://github.com/zzzmohammadgamezzz" class="link-card github" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_github">GitHub</h3>
+                            <p class="link-desc" data-i18n="link_github_desc">Code, Projects & Contributions</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                    
+                    <a href="https://instagram.com/z.z.mohammad.z.z" class="link-card instagram" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_instagram">Instagram</h3>
+                            <p class="link-desc" data-i18n="link_instagram_desc">Daily Updates & Behind Scenes</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                    
+                    <a href="https://t.me/zzzmohammadzzz" class="link-card telegram" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_telegram">Telegram</h3>
+                            <p class="link-desc" data-i18n="link_telegram_desc">Channel & Direct Messages</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                    
+                    <a href="https://youtube.com/@felbedahe" class="link-card youtube" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_youtube">YouTube</h3>
+                            <p class="link-desc" data-i18n="link_youtube_desc">Tech Content & Tutorials</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                    
+                    <a href="https://wa.me/+989939909733" class="link-card whatsapp" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_whatsapp">WhatsApp</h3>
+                            <p class="link-desc" data-i18n="link_whatsapp_desc">Quick Messages & Chats</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                    
+                    <a href="https://steampowered.com/zzzmohammadzzz1" class="link-card steam" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_steam">Steam</h3>
+                            <p class="link-desc" data-i18n="link_steam_desc">Gaming Profile & Library</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                    
+                    <a href="https://discord.com/zzzmohammadzzz" class="link-card discord" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_discord">Discord</h3>
+                            <p class="link-desc" data-i18n="link_discord_desc">Community & Gaming Chat</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                    
+                    <a href="https://zzzmohammadgmezzz.github.io/Aqua-Market/" class="link-card linkedin" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 class="link-title" data-i18n="link_linkedin">LinkedIn</h3>
+                            <p class="link-desc" data-i18n="link_linkedin_desc">Professional Profile</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="link-glow"></div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section class="contact-section" id="contact">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact_title">Contact & Freelance</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle" data-i18n="contact_subtitle">Available for interesting projects & collaborations</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="contact_email">Email</h3>
+                            <a href="mailto:zzzmohammadgamezzz@gmail.com" class="contact-link">mammad@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="contact_freelance">Freelance Projects</h3>
+                            <p data-i18n="contact_freelance_desc">Web, Design, Networking & AI Solutions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="contact_content">Content Creation</h3>
+                            <p data-i18n="contact_content_desc">YouTube videos, tutorials & tech content</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">💻</span>
+                    <h2 class="logo-text">Mammad</h2>
+                </div>
+                
+                <p class="footer-tagline" data-i18n="footer_tagline">Code • Design • Create • Game</p>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                <p class="copyright">
+                    <span data-i18n="footer_copyright">© Mammad</span> 
+                    <span id="currentYear">2024</span>. 
+                    <span data-i18n="footer_rights">All rights reserved.</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
