@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mammad | Software Engineer & Content Creator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
@@ -15,62 +15,104 @@
     <!-- Skip to content for accessibility -->
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
     
-    <div class="container">
-        <!-- Header with navigation -->
-        <header class="header">
-            <div class="header-container">
-                <!-- Logo/Brand -->
-                <div class="logo">
-                    <span class="logo-icon">💻</span>
-                    <h1 class="logo-text">Mammad</h1>
-                </div>
-                
-                <!-- Desktop navigation -->
-                <nav class="desktop-nav" aria-label="Main navigation">
-                    <ul class="nav-list">
-                        <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
-                        <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
-                        <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
-                        <li><a href="#links" class="nav-link" data-i18n="nav_links">Links</a></li>
-                        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
-                    </ul>
-                </nav>
-                
-                <!-- Header controls -->
-                <div class="header-controls">
-                    <!-- Language toggle -->
-                    <button class="control-btn lang-toggle" id="langToggle" aria-label="Toggle language">
-                        <span class="lang-text">EN</span>
-                        <span class="lang-icon">🌐</span>
-                    </button>
-                    
-                    <!-- Theme toggle -->
-                    <button class="control-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                    </button>
-                    
-                    <!-- Hamburger menu for mobile -->
-                    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                    </button>
-                </div>
+    <!-- Header with navigation -->
+    <header class="header" id="main-header">
+        <div class="header-container container">
+            <!-- Logo/Brand -->
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <h1 class="logo-text">Mammad</h1>
             </div>
             
-            <!-- Mobile navigation -->
-            <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-                <ul class="mobile-nav-list">
-                    <li><a href="#home" class="mobile-nav-link active" data-i18n="nav_home">Home</a></li>
-                    <li><a href="#about" class="mobile-nav-link" data-i18n="nav_about">About</a></li>
-                    <li><a href="#skills" class="mobile-nav-link" data-i18n="nav_skills">Skills</a></li>
-                    <li><a href="#links" class="mobile-nav-link" data-i18n="nav_links">Links</a></li>
-                    <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a></li>
+            <!-- Desktop navigation -->
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="#links" class="nav-link" data-i18n="nav_links">Links</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
+            
+            <!-- Header controls -->
+            <div class="header-controls">
+                <!-- Language toggle -->
+                <button class="control-btn lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                    <span class="lang-icon">🌐</span>
+                </button>
+                
+                <!-- Theme toggle -->
+                <button class="control-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                
+                <!-- Hamburger menu for mobile -->
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <!-- Mobile navigation menu (full screen) -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <div class="mobile-nav-header">
+            <div class="mobile-logo">
+                <span class="logo-icon">💻</span>
+                <h2 class="logo-text">Mammad</h2>
+            </div>
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-nav-link active" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-i18n="nav_about">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#links" class="mobile-nav-link" data-i18n="nav_links">Links</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        
+        <div class="mobile-nav-controls">
+            <button class="mobile-control-btn lang-toggle" id="mobileLangToggle" aria-label="Toggle language">
+                <span class="lang-text">EN</span>
+                <span class="lang-icon">🌐</span>
+            </button>
+            
+            <button class="mobile-control-btn theme-toggle" id="mobileThemeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav-footer">
+            <div class="mobile-social-links">
+                <a href="https://github.com/zzzmohammadgamezzz" class="mobile-social-link" aria-label="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtube.com/@felbedahe" class="mobile-social-link" aria-label="YouTube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://t.me/zzzmohammadzzz" class="mobile-social-link" aria-label="Telegram" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://instagram.com/z.z.mohammad.z.z" class="mobile-social-link" aria-label="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="mobile-copyright">© Mammad <span id="mobileYear">2024</span></p>
+        </div>
+    </nav>
+
+    <div class="container">
         <!-- Main content -->
         <main id="main-content">
             <!-- Hero/Profile section -->
@@ -232,35 +274,35 @@
                         <div class="skill-bar">
                             <div class="skill-name" data-i18n="skill_python">Python</div>
                             <div class="skill-level">
-                                <div class="skill-fill" style="width: 90%"></div>
+                                <div class="skill-fill" data-width="90"></div>
                             </div>
                             <div class="skill-percent">90%</div>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-name" data-i18n="skill_web_dev">Web Development</div>
                             <div class="skill-level">
-                                <div class="skill-fill" style="width: 85%"></div>
+                                <div class="skill-fill" data-width="85"></div>
                             </div>
                             <div class="skill-percent">85%</div>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-name" data-i18n="skill_adobe">Adobe Creative Suite</div>
                             <div class="skill-level">
-                                <div class="skill-fill" style="width: 88%"></div>
+                                <div class="skill-fill" data-width="88"></div>
                             </div>
                             <div class="skill-percent">88%</div>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-name" data-i18n="skill_ai_tools">AI Tools</div>
                             <div class="skill-level">
-                                <div class="skill-fill" style="width: 82%"></div>
+                                <div class="skill-fill" data-width="82"></div>
                             </div>
                             <div class="skill-percent">82%</div>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-name" data-i18n="skill_networking">Networking</div>
                             <div class="skill-level">
-                                <div class="skill-fill" style="width: 80%"></div>
+                                <div class="skill-fill" data-width="80"></div>
                             </div>
                             <div class="skill-percent">80%</div>
                         </div>
@@ -445,10 +487,10 @@
                 <p class="footer-tagline" data-i18n="footer_tagline">Code • Design • Create • Game</p>
                 
                 <div class="footer-social">
-                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/zzzmohammadgamezzz" class="social-icon" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://youtube.com/@felbedahe" class="social-icon" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://t.me/zzzmohammadzzz" class="social-icon" aria-label="Telegram" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://instagram.com/z.z.mohammad.z.z" class="social-icon" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
                 
                 <p class="copyright">
